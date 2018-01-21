@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarks</title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body onload="fetchBookmarks()">
+    <h1>Bookmark your favourite websites</h1>
+    <hr>
+    <form id="myForm">
+        <input type="text" name="siteName" id="siteName" placeholder="Bookmark Name" autofocus/><br /><br />
+        <input type="text" name="siteUrl" id="siteUrl" placeholder="Website URL" /><br /><br />
+        <button type="submit" >Add bookmark</button>
+    </form>
+    
+    
+        <h3>Your current bookmarks: </h3>
+        <div id="bookmarksResults"></div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
