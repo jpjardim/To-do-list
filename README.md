@@ -7,7 +7,7 @@ Hosted on github pages: https://jpjardim.github.io/To-do-list/
 ## Built With
 
 * **Frontend:** HTML, CSS, JavaScript, Materialize
-* **Storage:** Chrome local storage
+* **Storage:** Browser local storage
 
 
 
