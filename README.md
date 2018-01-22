@@ -1,8 +1,8 @@
 # To-do list APP
 
 Simple Vanilla JavaScript application where you can add, delete and set tasks to completed. The application uses only JavaScript for it's logic and the local browser storage. BETTER RUN IN CHROME.
-This application was made as part of my JavaScript studies.
-Link for live Web App: https://c3rpbmo.000webhostapp.com/
+This application was made as part of my JavaScript studies. The application is in progress - needs mobile optimization.
+Hosted on github pages: https://jpjardim.github.io/To-do-list/
 
 ## Built With
 
