@@ -1,26 +1,64 @@
 <!DOCTYPE html>
 <html lang="">
+
 <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bookmarks</title>
+    <title>To do List</title>
     <link rel="stylesheet" href="">
 </head>
 
-<body onload="fetchBookmarks()">
-    <h1>Bookmark your favourite websites</h1>
-    <hr>
-    <form id="myForm">
-        <input type="text" name="siteName" id="siteName" placeholder="Bookmark Name" autofocus/><br /><br />
-        <input type="text" name="siteUrl" id="siteUrl" placeholder="Website URL" /><br /><br />
-        <button type="submit" >Add bookmark</button>
-    </form>
-    
-    
-        <h3>Your current bookmarks: </h3>
-        <div id="bookmarksResults"></div>
-    
+<body onload="renderTasks()">
+    <nav class="light-blue lighten-1">
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo center">To do List</a>
+        </div>
+    </nav>
+    <div class="container">
+        <br/><br/>
+        <h1 class="header center orange-text">Simple to-do list</h1>
+        <div class="row center">
+            <h5 class="header col s12 light">Type in a task and click on 'add' to insert it in yout task list</h5>
+        </div>
+        <div class="row">
+            <form id="myForm" class="col s12">
+                <div class="row">
+                    <div class="input-field col s7 offset-s2">
+                        <input id="task" type="text" class="validate" required>
+                        <label for="task">Enter a task</label>
+                    </div>
+                    <div class="input-field col s3">
+                        <button class="btn waves-effect orange" type="submit">Add
+                        <i class="material-icons right">add</i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <br>
+        
+        <div class="row center" >
+            <h5 class="header col s12 light">List of tasks</h5>
+        </div>
+        <div class="row center">
+            <div id="taskList" class="col s12 offset-s3"></div>
+        </div>
+        <div class="row center">
+            <div id="message"></div>
+        </div>    
+        
+    </div>
+    <footer class="page-footer white">
 
-    <script src="script.js"></script>
+    </footer>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
