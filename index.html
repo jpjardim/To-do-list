@@ -13,8 +13,8 @@
 </head>
 
 <body onload="renderTasks()">
-    <nav class="light-blue lighten-1">
-        <div class="nav-wrapper">
+    <nav class="light-blue lighten-1" role="navigation">
+        <div class="nav-wrapper container">
             <a href="#!" class="brand-logo center">To do List</a>
         </div>
     </nav>
@@ -22,16 +22,18 @@
         <br/><br/>
         <h1 class="header center orange-text">Simple to-do list</h1>
         <div class="row center">
-            <h5 class="header col s12 light">Type in a task and click on 'add' to insert it in your list of tasks</h5>
+            <h5 class="header col s12 light">Type in a task and click on 'add' to insert it in yout task list</h5>
         </div>
         <div class="row">
             <form id="myForm" class="col s12">
-                <div class="row">
-                    <div class="input-field col s7 offset-s2">
+                <div class="row center">
+                    <div class="input-field">
                         <input id="task" type="text" class="validate" required>
                         <label for="task">Enter a task</label>
                     </div>
-                    <div class="input-field col s3">
+                </div>
+                <div class="row center">
+                    <div class="input-field col s12">
                         <button class="btn waves-effect orange" type="submit">Add
                         <i class="material-icons right">add</i>
                         </button>
@@ -52,10 +54,6 @@
         </div>    
         
     </div>
-    <footer class="page-footer white">
-
-    </footer>
-
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script src="js/main.js"></script>

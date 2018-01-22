@@ -61,7 +61,7 @@ function renderTasks() {
                 //display every task to the page and add two buttons to each task, one for deleting and one for completing the task
                 content.innerHTML +="<div class='row'>" +
                                     "<div class='col s12 m6'>" +
-                                    "<div class='card'>" +
+                                    "<div class='card hoverable'>" +
                                     "<div class='card-content'>" +
                                     "<span class='card-title'>Task "+(i+1)+"</span>" +
                                     "<a class='btn-floating halfway-fab waves-effect waves-light red' onClick='deleteTask(\"" + taskList[i].name + "\")'><i class='material-icons'>delete</i></a>" +
@@ -75,7 +75,7 @@ function renderTasks() {
                 //display every task to the page and add two buttons to each task, one for deleting and one for completing the task
                 content.innerHTML += "<div class='row'>" +
                                     "<div class='col s12 m6'>" +
-                                    "<div class='card'>" +
+                                    "<div class='card hoverable'>" +
                                     "<div class='card-content'>" +
                                     "<span class='card-title'>Task "+(i+1)+" <i class='small material-icons'>check</i></span>" +
                                     "<a class='btn-floating halfway-fab waves-effect waves-light red' onClick='deleteTask(\"" + taskList[i].name + "\")'><i class='material-icons'>delete</i></a>" +
