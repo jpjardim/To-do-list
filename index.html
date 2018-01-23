@@ -1,59 +1,65 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
 
 <head>
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
     <title>To do List</title>
-    <link rel="stylesheet" href="">
+    <!-- CSS for materialize -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
 </head>
 
+<!-- body calls rendertasks method every time -->
 <body onload="renderTasks()">
+    <!-- Nav bar -->
     <nav class="light-blue lighten-1" role="navigation">
         <div class="nav-wrapper container">
-            <a href="#!" class="brand-logo center">To do List</a>
+            <a id="logo-container" href="#" class="brand-logo center">To-Do-App</a>
         </div>
     </nav>
-    <div class="container">
-        <br/><br/>
-        <h1 class="header center orange-text">Simple to-do list</h1>
-        <div class="row center">
-            <h5 class="header col s12 light">Type in a task and click on 'add' to insert it in yout task list</h5>
-        </div>
-        <div class="row">
-            <form id="myForm" class="col s12">
-                <div class="row center">
+
+    <!-- Container with static elements -->
+    <div class="section no-pad-bot" id="index-banner">
+        <div class="container">
+            <br><br>
+            <h1 class="header center orange-text">To Do list</h1>
+            <div class="row center">
+                <h5 class="header col s12 light">Type in a task and click on 'add' to insert it in yout task list</h5>
+            </div>
+            <div class="row center">
+                <form id="myForm">
                     <div class="input-field">
-                        <input id="task" type="text" class="validate" required>
+                        <input type="text" name="task" id="task" class="validate" required />
                         <label for="task">Enter a task</label>
                     </div>
-                </div>
-                <div class="row center">
-                    <div class="input-field col s12">
+                    <div class="input-field">
                         <button class="btn waves-effect orange" type="submit">Add
                         <i class="material-icons right">add</i>
                         </button>
                     </div>
-                </div>
-            </form>
+                </form>
+            </div>
+            <br><br>
         </div>
-        <br>
-        
-        <div class="row center" >
-            <h5 class="header col s12 light">List of tasks</h5>
-        </div>
-        <div class="row center">
-            <div id="taskList" class="col s12 offset-s3"></div>
-        </div>
-        <div class="row center">
-            <div id="message"></div>
-        </div>    
-        
     </div>
+
+    <!-- Container with results and dynamic elements -->
+    <div class="container">
+        <div class="section">
+            <div class="row center">
+                <div class="col s12 m12">
+                    <h5 class="header col s12 light">List of tasks</h5>
+                    <div id="taskList" style="margin: 0 auto;"></div>
+                </div>
+                <div id="message"></div>
+            </div>
+
+        </div>
+        <br><br>
+    </div>
+
+    <!-- Scripts -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script src="js/main.js"></script>
